@@ -72,3 +72,17 @@ function update_aliment_aime($id_aliment, $id_utilisateur, $niveau)
     $upd = db()->prepare($sql);
     $upd->execute([$niveau, $id_utilisateur, $id_aliment]);
 }
+
+function update_nom_utilisateur($nom_utilisateur, $id)
+{
+    $sql = "UPDATE utilisateurs SET nom_utilisateur = ? WHERE id = ?";
+    $upd = db()->prepare($sql);
+    $upd->execute([$nom_utilisateur, $id]);
+}
+
+function update_mdp($pass, $id)
+{
+    $sql = "UPDATE utilisateurs SET pass = ? WHERE id = ?";
+    $upd = db()->prepare($sql);
+    $upd->execute([$pass, $id]);
+}

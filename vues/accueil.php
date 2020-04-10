@@ -1,13 +1,12 @@
-<h1>Liste d'aliments</h1>
+<h1><span class="material-icons">fastfood</span>Liste d'aliments</h1>
 <br/>
-<button class="btn btn-primary" id="ajouter_aliment" data-toggle="modal" data-target="#modal_ajouter_aliment"><span class="material-icons">restaurant</span>Ajouter un aliment</button>
+<button class="btn btn-outline-primary" id="ajouter_aliment" data-toggle="modal" data-target="#modal_ajouter_aliment"><span class="material-icons">restaurant</span>Ajouter un aliment</button>
 
-<div class="container">
-    <div class="row">
-        <div class="col-sm-12 col-lg-6 formulaire_cherche_aliment">
-            <label for="search_aliment">Chercher un aliment</label>
-            <input type="text" class="form-control" id="search_aliment">
-        </div>
+
+<div class="row">
+    <div class="col-sm-12 col-lg-6 formulaire_cherche_aliment">
+        <label for="search_aliment">Chercher un aliment</label>
+        <input type="text" class="form-control" id="search_aliment">
     </div>
 </div>
 
